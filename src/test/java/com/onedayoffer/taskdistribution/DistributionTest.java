@@ -22,7 +22,7 @@ public class DistributionTest {
     private TaskDistributor taskDistributor;
 
     @Test
-    public void shouldDistribute() {
+    public void shouldDistribute() throws Exception {
         List<EmployeeDTO> employees = dataGenerator.getEmployees();
         List<TaskDTO> tasks = dataGenerator.getTasks();
         taskDistributor.distribute(employees, tasks);

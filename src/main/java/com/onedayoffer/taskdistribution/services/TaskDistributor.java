@@ -6,5 +6,5 @@ import com.onedayoffer.taskdistribution.DTO.TaskDTO;
 import java.util.List;
 
 public interface TaskDistributor {
-    void distribute(List<EmployeeDTO> employees, List<TaskDTO> tasks);
+    void distribute(List<EmployeeDTO> employees, List<TaskDTO> tasks) throws Exception;
 }
